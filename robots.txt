@@ -1,0 +1,5 @@
+# Robots.txt for Vishwajeet Gupta Portfolio
+User-agent: *
+Allow: /
+
+Sitemap: https://vishwajeetgupta.vercel.app/sitemap.xml

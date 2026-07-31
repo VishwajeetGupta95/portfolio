@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishwajeet Gupta | Software Engineer</title>
+  <meta name="description"
+    content="Personal portfolio of Vishwajeet Gupta - Software Engineer specializing in Java, Spring Boot, WebRTC, AI Applications, and Distributed Systems.">
+  <meta name="keywords"
+    content="Vishwajeet Gupta, Software Engineer, Java, Spring Boot, WebRTC, Machine Learning, Portfolio, Systems Developer">
+  <meta name="author" content="Vishwajeet Gupta">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Vishwajeet Gupta | Software Engineer">
+  <meta property="og:description"
+    content="Software Engineer passionate about building scalable, high-performance applications and AI orchestration systems.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Remix Icons (Lightweight Vector Icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="spinner"></div>
+    <span style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">Loading Portfolio...</span>
+  </div>
+
+  <!-- Header & Navigation Bar -->
+  <header id="header" class="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">
+        <span>&lt;</span>Vishwajeet<span>/&gt;</span>
+      </a>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#timeline" class="nav-link">Experience</a>
+        <a href="#credentials" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge reveal-element">
+          <i class="ri-sparkling-fill"></i> GATE CSE 2026 Qualified (AIR 6827)
+        </div>
+
+        <h1 class="hero-title reveal-element reveal-delay-1">
+          Hi, I'm <span style="color: var(--accent-primary);">Vishwajeet Gupta</span>
+        </h1>
+
+        <div class="hero-subtitle reveal-element reveal-delay-2">
+
+          <span id="typing-text" style="color: var(--accent-primary);"></span>
+          <span class="typing-cursor"></span>
+        </div>
+
+        <p class="hero-description reveal-element reveal-delay-3">
+          Aspiring Software Engineer focused on constructing robust backend microservices, real-time audio/video
+          streaming with WebRTC, and AI-powered workflow automation.
+        </p>
+
+        <div class="hero-stats reveal-element reveal-delay-3">
+          <div class="stat-item">
+            <span class="stat-value">350+</span>
+            <span class="stat-label">LeetCode & Codeforces</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">80.1%</span>
+            <span class="stat-label">B.Tech CSE Aggregate</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">&lt;300ms</span>
+            <span class="stat-label">WebRTC Latency</span>
+          </div>
+        </div>
+
+        <div class="hero-ctas reveal-element reveal-delay-4">
+          <a href="#projects" class="btn btn-primary">
+            <i class="ri-terminal-box-line"></i> View Projects
+          </a>
+          <button id="view-resume-btn" class="btn btn-secondary">
+            <i class="ri-file-text-line"></i> View Resume
+          </button>
+          <a href="assets/docs/resume.pdf" download="Vishwajeet_Gupta_Resume.pdf" class="btn btn-outline"
+            target="_blank">
+            <i class="ri-download-line"></i> Download PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- Avatar Photo Frame -->
+      <div class="hero-avatar-wrapper reveal-element reveal-delay-2">
+        <div class="avatar-frame">
+          <img src="assets/images/avatar.jpg" alt="Vishwajeet Gupta Profile Photo" class="avatar-img" loading="eager">
+        </div>
+        <div class="avatar-experience-tag floating-element">
+          <i class="ri-code-s-slash-line"></i>
+          <div>
+            <strong>🌱 Lifelong learner </strong>
+            <span>Clean Code & Algorithms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header reveal-element">
+        <span class="section-subtitle">Background & Philosophy</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">
+          Building efficient, reliable, and scalable software with high engineering standards.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal-element reveal-delay-1">
+          <h3>Career Objective</h3>
+          <p>
+            Software Engineer with hands-on experience developing production-grade backends using <strong>Java, Spring
+              Boot, REST APIs, WebSockets, and WebRTC</strong>. I thrive on tackling complex algorithmic challenges and
+            engineering AI-driven solutions that improve productivity and reliability.
+          </p>
+          <p>
+            Constantly learning and adapting to modern distributed architecture patterns, microservices design, and
+            automated CI/CD pipelines.
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="assets/docs/resume.pdf" download="Vishwajeet_Gupta_Resume.pdf" class="btn btn-primary btn-sm">
+              <i class="ri-download-2-line"></i> Download Resume
+            </a>
+            <a href="https://github.com/VishwajeetGupta95" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary btn-sm">
+              <i class="ri-github-line"></i> Explore GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="about-card reveal-element reveal-delay-2">
+          <h3>Core Values</h3>
+          <div class="about-values">
+            <div class="value-item">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div>
+                <h4>System Performance</h4>
+                <p>Optimizing throughput and sub-second latency.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div>
+                <h4>Scalable Architecture</h4>
+                <p>Building modular, reusable backend microservices.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div>
+                <h4>Continuous Growth</h4>
+                <p>Solving algorithmic problems daily.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <i class="ri-checkbox-circle-fill"></i>
+              <div>
+                <h4>Clean Code</h4>
+                <p>Strict adhere to OOP principles & unit testing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal-element">
+        <span class="section-subtitle">Technical Proficiency</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-description">
+          Categorized technical stack spanning languages, backend architecture, databases, cloud, and engineering tools.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Skill Category 1 -->
+        <div class="skill-category-card reveal-element reveal-delay-1">
+          <div class="category-header">
+            <div class="category-icon"><i class="ri-code-line"></i></div>
+            <h3 class="category-title">Languages</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-chip"><i class="ri-cpu-line"></i> Java</span>
+            <span class="skill-chip"><i class="ri-terminal-window-line"></i> Python</span>
+            <span class="skill-chip"><i class="ri-javascript-line"></i> JavaScript</span>
+            <span class="skill-chip"><i class="ri-database-line"></i> SQL</span>
+          </div>
+        </div>
+
+        <!-- Skill Category 2 -->
+        <div class="skill-category-card reveal-element reveal-delay-2">
+          <div class="category-header">
+            <div class="category-icon"><i class="ri-server-line"></i></div>
+            <h3 class="category-title">Backend & Streaming</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-chip">Spring Boot</span>
+            <span class="skill-chip">Spring MVC</span>
+            <span class="skill-chip">REST APIs</span>
+            <span class="skill-chip">Microservices</span>
+            <span class="skill-chip">WebSockets</span>
+            <span class="skill-chip">WebRTC</span>
+          </div>
+        </div>
+
+        <!-- Skill Category 3 -->
+        <div class="skill-category-card reveal-element reveal-delay-3">
+          <div class="category-header">
+            <div class="category-icon"><i class="ri-database-2-line"></i></div>
+            <h3 class="category-title">Databases & Cloud</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-chip">PostgreSQL</span>
+            <span class="skill-chip">MySQL</span>
+            <span class="skill-chip">MongoDB</span>
+            <span class="skill-chip">Redis</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">AWS</span>
+          </div>
+        </div>
+
+        <!-- Skill Category 4 -->
+        <div class="skill-category-card reveal-element reveal-delay-4">
+          <div class="category-header">
+            <div class="category-icon"><i class="ri-tools-line"></i></div>
+            <h3 class="category-title">Engineering & Tools</h3>
+          </div>
+          <div class="skills-tags">
+            <span class="skill-chip">Git & GitHub</span>
+            <span class="skill-chip">JUnit 5</span>
+            <span class="skill-chip">Maven</span>
+            <span class="skill-chip">Postman</span>
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">System Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Slide View & Tech Filter) -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header reveal-element">
+        <span class="section-subtitle">Featured Engineering Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-description">
+          Interactive slide view showcasing production-grade software applications and open-source contributions.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filter-bar reveal-element reveal-delay-1">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="java">Java & Spring Boot</button>
+        <button class="filter-btn" data-filter="ai">AI & ML</button>
+        <button class="filter-btn" data-filter="webrtc">WebRTC & Real-Time</button>
+      </div>
+
+      <!-- Slider Component -->
+      <div class="slider-container reveal-element reveal-delay-2">
+        <button id="slider-prev" class="slider-nav-btn prev" aria-label="Previous Project">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+        <button id="slider-next" class="slider-nav-btn next" aria-label="Next Project">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
+
+        <div id="slider-track" class="slider-track">
+
+          <!-- Slide 1 -->
+          <div class="project-slide" data-category="java webrtc">
+            <div class="project-card">
+              <div class="project-preview">
+                <div class="project-preview-mockup">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="mockup-body">
+                    <div>// RouMic WebRTC Signaling & Queue Server</div>
+                    <div>const peerConnection = new RTCPeerConnection();</div>
+                    <div>webSocket.send({ type: "OFFER", sdp });</div>
+                    <div>console.log("Sub-300ms connection latency achieved");</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-tag">Real-Time Streaming Platform</span>
+                <h3 class="project-title">RouMic Platform</h3>
+                <p class="project-description">
+                  Developed scalable backend microservices using Java, Spring Boot, and WebSockets for low-latency
+                  real-time audio and video communications.
+                </p>
+                <ul class="project-highlights">
+                  <li>Implemented WebRTC signaling server achieving sub-300 ms connection latency.</li>
+                  <li>Built reusable modules for room management and performer queue handling.</li>
+                  <li>Migrating P2P architecture to SFU-based broadcasting model.</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-badge">Java</span>
+                  <span class="tech-badge">Spring Boot</span>
+                  <span class="tech-badge">WebRTC</span>
+                  <span class="tech-badge">WebSocket</span>
+                  <span class="tech-badge">React</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/VishwajeetGupta95" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm">
+                    <i class="ri-github-line"></i> Repository
+                  </a>
+                  <a href="#contact" class="btn btn-secondary btn-sm">
+                    <i class="ri-information-line"></i> Request Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="project-slide" data-category="java ai">
+            <div class="project-card">
+              <div class="project-preview">
+                <div class="project-preview-mockup">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="mockup-body">
+                    <div>// AI Code Review Analysis Engine</div>
+                    <div>POST /api/v1/review/analyze</div>
+                    <div>LLM_API.generateContextualReview(astTree);</div>
+                    <div>Status: 200 OK (Optimized DB Indexing)</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-tag">Automated Code Quality Platform</span>
+                <h3 class="project-title">AI Code Review Assistant</h3>
+                <p class="project-description">
+                  Automated code analysis platform providing developers with real-time architectural feedback and bug
+                  detection powered by Large Language Models.
+                </p>
+                <ul class="project-highlights">
+                  <li>Built RESTful APIs for automated code linting and developer feedback.</li>
+                  <li>Integrated LLM APIs to generate contextual inline review suggestions.</li>
+                  <li>Optimized PostgreSQL queries for fast historical review lookup.</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-badge">Java</span>
+                  <span class="tech-badge">Spring Boot</span>
+                  <span class="tech-badge">PostgreSQL</span>
+                  <span class="tech-badge">LLM APIs</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/VishwajeetGupta95" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm">
+                    <i class="ri-github-line"></i> Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="project-slide" data-category="ai">
+            <div class="project-card">
+              <div class="project-preview">
+                <div class="project-preview-mockup">
+                  <div class="mockup-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="mockup-body">
+                    <div># PocketPaw AI Agent Orchestration</div>
+                    <div>def route_agent_workflow(task_type):</div>
+                    <div> agent = selector.get_optimal_agent(task_type)</div>
+                    <div> return agent.execute_with_retry()</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <span class="project-tag">Open Source AI System</span>
+                <h3 class="project-title">PocketPaw Orchestration</h3>
+                <p class="project-description">
+                  Open-source contributions to AI agent routing logic and task orchestration frameworks to enhance agent
+                  reliability.
+                </p>
+                <ul class="project-highlights">
+                  <li>Enhanced backend routing algorithms for multi-agent workflow execution.</li>
+                  <li>Added robust regression test suites with pytest.</li>
+                  <li>Merged production pull requests following peer review.</li>
+                </ul>
+                <div class="project-tech">
+                  <span class="tech-badge">Python</span>
+                  <span class="tech-badge">pytest</span>
+                  <span class="tech-badge">Git Workflows</span>
+                  <span class="tech-badge">Agentic AI</span>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/VishwajeetGupta95" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm">
+                    <i class="ri-github-line"></i> Open Source PRs
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="slider-dots" class="slider-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Timeline Section -->
+  <section id="timeline" class="timeline-section" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal-element">
+        <span class="section-subtitle">Academic & Technical Journey</span>
+        <h2 class="section-title">Education & Experience</h2>
+        <p class="section-description">
+          Academic foundation in Computer Science and competitive problem-solving milestones.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item reveal-element reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Bachelor of Technology (Computer Science & Engineering)</h3>
+                <span class="timeline-institution">Pranveer Singh Institute of Technology, Kanpur</span>
+              </div>
+              <span class="timeline-duration">2023 – 2027</span>
+            </div>
+            <div class="timeline-details">
+              <p>Current Aggregate: <strong>80.09%</strong></p>
+              <p>Relevant Coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems,
+                Computer Networks, Object-Oriented Programming, System Design, Machine Learning.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item reveal-element reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Class XII (CBSE Senior Secondary)</h3>
+                <span class="timeline-institution">SGM International School, Kanpur</span>
+              </div>
+              <span class="timeline-duration">2021 – 2022</span>
+            </div>
+            <div class="timeline-details">
+              <p>Percentage: <strong>79.2%</strong> (Physics, Chemistry, Mathematics)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item reveal-element reveal-delay-3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Class X (CBSE Secondary)</h3>
+                <span class="timeline-institution">SGM International School, Kanpur</span>
+              </div>
+              <span class="timeline-duration">2019 – 2020</span>
+            </div>
+            <div class="timeline-details">
+              <p>Percentage: <strong>91.16%</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Achievements Section -->
+  <section id="credentials" class="credentials">
+    <div class="container">
+      <div class="section-header reveal-element">
+        <span class="section-subtitle">Verified Accomplishments</span>
+        <h2 class="section-title">Certifications & Achievements</h2>
+      </div>
+
+      <div class="credentials-grid">
+        <!-- Certifications Column -->
+        <div class="credentials-card reveal-element reveal-delay-1">
+          <h3><i class="ri-award-line"></i> Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Machine Learning Specialization</div>
+                <div class="cert-issuer">DeepLearning.AI</div>
+              </div>
+              <span class="cert-date">June 2026</span>
+            </div>
+
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Java Programming</div>
+                <div class="cert-issuer">IBM</div>
+              </div>
+              <span class="cert-date">June 2025</span>
+            </div>
+
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Introduction to Software Engineering</div>
+                <div class="cert-issuer">IBM</div>
+              </div>
+              <span class="cert-date">May 2025</span>
+            </div>
+
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Meta Database Engineer Professional</div>
+                <div class="cert-issuer">Coursera / Meta</div>
+              </div>
+              <span class="cert-date">Nov 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Column -->
+        <div class="credentials-card reveal-element reveal-delay-2">
+          <h3><i class="ri-trophy-line"></i> Key Achievements</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Qualified GATE (CSE) 2026</div>
+                <div class="cert-issuer">All India Rank: 6827 (Score: 512)</div>
+              </div>
+              <span class="cert-date">2026</span>
+            </div>
+
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">350+ Algorithmic Problems</div>
+                <div class="cert-issuer">LeetCode, Codeforces & CodeChef</div>
+              </div>
+              <span class="cert-date">Active</span>
+            </div>
+
+            <div class="cert-item">
+              <div>
+                <div class="cert-name">Qualified TCS CodeVita Season 13</div>
+                <div class="cert-issuer">Tata Consultancy Services</div>
+              </div>
+              <span class="cert-date">2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Social Links Section -->
+  <section id="contact" class="contact" style="background-color: var(--bg-tertiary);">
+    <div class="container">
+      <div class="section-header reveal-element">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Connect With Me</h2>
+        <p class="section-description">
+          Open for full-time engineering roles, software development opportunities, and technical collaborations.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal-element reveal-delay-1">
+          <div class="contact-icon"><i class="ri-mail-line"></i></div>
+          <h4>Email</h4>
+          <a href="mailto:vishwajeetgupta0326@gmail.com">vishwajeetgupta0326@gmail.com</a>
+        </div>
+
+        <div class="contact-card reveal-element reveal-delay-2">
+          <div class="contact-icon"><i class="ri-phone-line"></i></div>
+          <h4>Phone</h4>
+          <a href="tel:+918604920855">+91 8604920855</a>
+        </div>
+
+        <div class="contact-card reveal-element reveal-delay-3">
+          <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+          <h4>Location</h4>
+          <p>Kanpur, Uttar Pradesh, India</p>
+        </div>
+      </div>
+
+      <!-- Social Links Bar -->
+      <div class="social-bar reveal-element reveal-delay-4">
+        <a href="https://www.linkedin.com/in/vishwajeet-gupta-17275832a/" target="_blank" rel="noopener noreferrer"
+          class="social-link-btn" aria-label="LinkedIn Profile">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/VishwajeetGupta95" target="_blank" rel="noopener noreferrer" class="social-link-btn"
+          aria-label="GitHub Profile">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://leetcode.com/u/Vishwajeet_0326/" target="_blank" rel="noopener noreferrer"
+          class="social-link-btn" aria-label="LeetCode Profile">
+          <i class="ri-code-box-line"></i>
+        </a>
+        <a href="mailto:vishwajeetgupta0326@gmail.com" class="social-link-btn" aria-label="Send Direct Email">
+          <i class="ri-mail-send-fill"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © 2026 Vishwajeet Gupta. Crafted with modern HTML, CSS, & Vanilla JS.
+      </div>
+      <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Floating Button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- Resume Preview Modal -->
+  <div id="resume-modal" class="modal-backdrop">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Vishwajeet Gupta - Curriculum Vitae</h3>
+        <button id="close-modal-btn" class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/docs/resume.pdf" class="modal-iframe" title="Vishwajeet Gupta Resume Document"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
