@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Vishwajeet Gupta</title>
+  <meta name="description" content="Page not found - Software Engineer portfolio">
+  
+  <link rel="icon" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="error-page">
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span>&lt;</span>Vishwajeet<span>/&gt;</span>
+      </a>
+
+      <nav id="nav-menu" class="nav-menu">
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Error Section -->
+  <section class="error-section">
+    <div class="container">
+      <div class="error-content">
+        <div class="error-code reveal-element">
+          <i class="ri-4k-line"></i>
+          <span>404</span>
+        </div>
+
+        <h1 class="error-title reveal-element reveal-delay-1">Page Not Found</h1>
+
+        <p class="error-description reveal-element reveal-delay-2">
+          The page you're looking for doesn't exist or has been moved. Let's get you back on track!
+        </p>
+
+        <div class="error-actions reveal-element reveal-delay-3">
+          <a href="index.html" class="btn btn-primary">
+            <i class="ri-home-5-line"></i> Return Home
+          </a>
+          <a href="index.html#contact" class="btn btn-secondary">
+            <i class="ri-mail-send-line"></i> Contact Me
+          </a>
+          <button id="report-error-btn" class="btn btn-outline">
+            <i class="ri-bug-line"></i> Report Issue
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © 2026 Vishwajeet Gupta. All rights reserved.
+      </div>
+      <div style="display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--text-muted);">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/theme.js"></script>
+  <script>
+    // Error page specific functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+      const reportErrorBtn = document.getElementById('report-error-btn');
+      const backToTopBtn = document.getElementById('back-to-top-btn');
+
+      // Theme toggle
+      themeToggle.addEventListener('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+
+      // Mobile navigation
+      mobileNavToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+      });
+
+      // Report error button
+      reportErrorBtn.addEventListener('click', function() {
+        const currentPage = window.location.href;
+        const emailBody = `Page not found error:\nURL: ${currentPage}\nReferrer: ${document.referrer || 'Direct access'}`;
+        window.location.href = `mailto:vishwajeetgupta0326@gmail.com?body=${encodeURIComponent(emailBody)}`;
+      });
+
+      // Back to top button
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+
+      backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+
+</html>

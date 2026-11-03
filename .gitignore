@@ -3,3 +3,12 @@ Thumbs.db
 node_modules/
 .vercel
 *.log
+
+# Deployment scripts (keep these for local deployment)
+# s3-deploy.sh
+# s3-deploy.bat
+# cloudformation-deploy.yaml
+
+# Documentation
+# AWS-DEPLOYMENT-GUIDE.md
+# DEPLOYMENT-README.md

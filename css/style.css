@@ -1068,3 +1068,144 @@ section {
     padding: 1.5rem;
   }
 }
+
+
+/* ==========================================================================
+   404 ERROR PAGE STYLES
+   ========================================================================== */
+.error-page .header {
+  background-color: var(--bg-primary);
+}
+
+.error-page .nav-menu {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.error-page .nav-link:hover,
+.error-page .nav-link.active {
+  color: var(--accent-primary);
+}
+
+.error-page .nav-link::after {
+  background-color: var(--accent-primary);
+}
+
+.error-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background: radial-gradient(circle at center, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+}
+
+.error-content {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.error-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.error-code i {
+  font-size: 6rem;
+  color: var(--accent-primary);
+  animation: float 3s ease-in-out infinite;
+}
+
+.error-code span {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+  position: absolute;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.error-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.error-description {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .error-code i,
+  .error-code span {
+    font-size: 4rem;
+  }
+
+  .error-title {
+    font-size: 2rem;
+  }
+
+  .error-actions {
+    flex-direction: column;
+  }
+}
+
+/* Animations for error page */
+.reveal-element {
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.reveal-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.reveal-delay-3 {
+  animation-delay: 0.6s;
+}
